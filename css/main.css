@@ -1,0 +1,586 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f5f5f5;
+     color: #333;
+ }
+
+ /* Header */
+ header {
+     background-color: white;
+     padding: 1em 2em;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+ }
+
+ header h1 {
+     margin: 0;
+     font-size: 1.5em;
+     color: #1f2937;
+ }
+
+ nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     gap: 1em;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #4b5563;
+     padding: 0.5em 1em;
+     border-radius: 0.375em;
+     transition: background-color 0.3s;
+ }
+
+ nav a.active,
+ nav a:hover {
+     background-color: #2563EB;
+     color: white;
+ }
+
+ /* Section base style */
+ section {
+     margin: 1em auto;
+     max-width: 900px;
+     padding: 2em;
+     background: white;
+     border-radius: 0.5em;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ h2 {
+     color: #2c3e50;
+     margin-top: 0;
+ }
+
+ /* À propos */
+ #apropos {
+     background-color: #EFF6FF;
+     text-align: center;
+ }
+
+ .photo-circle {
+     width: 120px;
+     height: 120px;
+     background-color: #cbd5e1;
+     border-radius: 50%;
+     margin: 0 auto 1.5em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #475569;
+     font-weight: bold;
+ }
+
+ .photo-circle img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     display: block;
+ }
+
+ .boutons a {
+     margin: 0 0.5em 0.5em 0;
+     padding: 0.75em 1.25em;
+     background-color: #2563EB;
+     color: white;
+     border-radius: 0.375em;
+     text-decoration: none;
+     display: inline-block;
+     transition: background-color 0.3s;
+ }
+
+ .boutons a.github {
+     background-color: #111827;
+ }
+
+ .boutons a.cv {
+     background-color: #10B981;
+ }
+
+ /* Compétences */
+ #competences {
+     text-align: left;
+     margin-top: 2em;
+ }
+
+ #competences h2 {
+     text-align: center;
+     color: #1f2937;
+     margin-bottom: 1em;
+ }
+
+ .competence-domain {
+     background: #EFF6FF;
+     padding: 1em;
+     border-radius: 0.5em;
+     margin-bottom: 1em;
+ }
+
+ .competence-domain h4 {
+     margin: 0 0 0.5em;
+     color: #2563EB;
+ }
+
+ .competence-items {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1em;
+ }
+
+ .competence-button {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5em;
+     margin-top: 1em;
+     padding: 0.75em 1.5em;
+     background-color: #2563EB;
+     color: white;
+     border-radius: 0.375em;
+     text-decoration: none;
+     font-weight: 500;
+     transition: background-color 0.3s;
+ }
+
+ .competence-button:hover {
+     background-color: #1e40af;
+ }
+
+ .competence-items .item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 80px;
+ }
+
+ .competence-items .item img {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 0.5em;
+ }
+
+ .competence-items .item span {
+     text-align: center;
+     font-size: 0.85em;
+     color: #333;
+ }
+
+
+ /* Compétences */
+ #competences {
+     text-align: left;
+     margin-top: 2em;
+ }
+
+ #competences h2 {
+     text-align: center;
+     color: #1f2937;
+     margin-bottom: 1em;
+ }
+
+ .competence-domain {
+     background: #EFF6FF;
+     padding: 1em;
+     border-radius: 0.5em;
+     margin-bottom: 1em;
+ }
+
+ .competence-domain h4 {
+     margin: 0 0 0.5em;
+     color: #2563EB;
+ }
+
+ .competence-domain ul {
+     list-style: disc inside;
+     margin: 0;
+     padding: 0;
+     color: #374151;
+     line-height: 1.5;
+ }
+
+ /* Formation */
+ #formation {
+     text-align: center;
+ }
+
+ #formation h2 {
+     font-size: 2em;
+     margin-bottom: 0.5em;
+ }
+
+ #formation p {
+     max-width: 700px;
+     margin: 0 auto 2em;
+     color: #4b5563;
+     line-height: 1.5;
+ }
+
+ .formation-card {
+     background-color: #EFF6FF;
+     border-radius: 0.5em;
+     padding: 2em;
+     margin: 0 auto;
+     max-width: 800px;
+     text-align: left;
+ }
+
+ .formation-card h3 {
+     margin-top: 0;
+     color: #1f2937;
+ }
+
+ .formation-meta {
+     display: flex;
+     gap: 1.5em;
+     margin: 0.5em 0 1em;
+     color: #4b5563;
+ }
+
+ .formation-meta i {
+     color: #2563EB;
+     margin-right: 0.5em;
+ }
+
+ .btn-link {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5em;
+     padding: 0.75em 1.5em;
+     background-color: #2563EB;
+     color: white;
+     border-radius: 0.375em;
+     text-decoration: none;
+     margin-top: 1em;
+ }
+
+ .formation-buttons {
+     display: flex;
+     gap: 1em;
+     justify-content: center;
+     margin-top: 1.5em;
+ }
+
+ .btn-link.pix {
+     background-color: #16a34a;
+     /* Green for PIX */
+ }
+
+ .btn-link.anssi {
+     background-color: #eab308;
+     /* Gold/Yellow for ANSSI */
+ }
+
+ .btn-link.pix:hover,
+ .btn-link.anssi:hover {
+     opacity: 0.9;
+ }
+
+ /* Réalisations */
+ #realisations {
+     text-align: center;
+ }
+
+ #realisations h2 {
+     font-size: 2em;
+     margin-bottom: 0.5em;
+ }
+
+ .intro {
+     max-width: 700px;
+     margin: 0 auto 2em;
+     color: #4b5563;
+     line-height: 1.5;
+ }
+
+ .realisations-category {
+     margin-bottom: 2em;
+ }
+
+ .realisations-category h3 {
+     display: flex;
+     align-items: center;
+     gap: 0.5em;
+     color: #1f2937;
+ }
+
+ .dot {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     display: inline-block;
+ }
+
+ .dot.blue {
+     background-color: #3b82f6;
+ }
+
+ .dot.green {
+     background-color: #10B981;
+ }
+
+ .dot.purple {
+     background-color: #8b5cf6;
+ }
+
+ .card-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 1.5em;
+     justify-items: start;
+     ;
+     justify-content: center;
+ }
+
+ .card {
+     background: white;
+     border-radius: 0.5em;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     max-width: 360px;
+     width: 100%;
+ }
+
+ .card .image-placeholder {
+     width: 100%;
+     height: 180px;
+     background-color: #e5e7eb;
+ }
+
+ .card .image-placeholder img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     /* This will crop to fill the container */
+     border-radius: 0.5em 0.5em 0 0;
+     /* Optional: rounds top corners */
+     display: block;
+ }
+
+ .card-body {
+     padding: 1.5em;
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .card-body h4 {
+     margin: 0 0 0.5em;
+ }
+
+ .meta {
+     font-size: 0.9em;
+     color: #4b5563;
+     margin-bottom: 1em;
+ }
+
+ .tags {
+     display: flex;
+     gap: 0.5em;
+     flex-wrap: wrap;
+     margin-bottom: 1em;
+ }
+
+ .tags span {
+     background-color: #e0e7ff;
+     color: #4338ca;
+     padding: 0.25em 0.75em;
+     border-radius: 0.375em;
+ }
+
+ .card-actions a {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5em;
+     padding: 0.5em 1em;
+     border-radius: 0.375em;
+     text-decoration: none;
+     color: white;
+ }
+
+ .card-actions .pdf {
+     background-color: #10B981;
+ }
+
+ .card-actions .more {
+     background-color: #2563EB;
+ }
+
+ .card-actions .attestation {
+     background-color: #F59E0B;
+     color: white;
+ }
+
+ .card-actions .attestation:hover {
+     opacity: 0.8;
+ }
+
+ /* Veille technologique */
+ #veille {
+     text-align: center;
+ }
+
+ #veille .intro {
+     max-width: 700px;
+     margin: 0 auto 2em;
+     color: #4b5563;
+     line-height: 1.5;
+ }
+
+ #veille table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 1em 0;
+ }
+
+ #veille th,
+ #veille td {
+     border: 1px solid #e2e8f0;
+     padding: 0.75em;
+ }
+
+ #veille th {
+     background-color: #f1f5f9;
+     color: #1f2937;
+ }
+
+ #veille .card-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 1.5em;
+     justify-items: start;
+ }
+
+ #veille .intro {
+     max-width: 700px;
+     margin: 0 auto 2em;
+     color: #4b5563;
+     line-height: 1.5;
+ }
+
+ #veille .card-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 1.5em;
+     justify-items: start;
+ }
+
+ .trend-icon {
+     color: #10B981;
+     display: flex;
+     align-items: center;
+     gap: 0.25em;
+ }
+
+ #veille-section {
+     margin: 0;
+ }
+
+ #veille h3 {
+     color: #1f2937;
+     margin-top: 2em;
+     margin-bottom: 0.4em;
+     font-size: 1.15em;
+     font-weight: bold;
+     background: none;
+     padding: 0;
+     letter-spacing: 0.01em;
+     text-align: left;
+ }
+
+ #veille .veille-block {
+     background: #f8fafc;
+     border-radius: 0.3em;
+     padding: 1.1em 1em 1em 1em;
+     margin-bottom: 1.5em;
+     border: 1px solid #e5e7eb;
+     box-shadow: none;
+     text-align: left;
+ }
+
+ #veille .veille-block table {
+     background: white;
+ }
+
+ #veille .veille-block ul {
+     padding-left: 1.3em;
+ }
+
+
+ /* Footer */
+ footer {
+     background-color: #1f2937;
+     color: #f1f5f9;
+     padding: 2em 1em 1em 1em;
+     text-align: center;
+     font-size: 1em;
+ }
+
+ .footer-content {
+     max-width: 900px;
+     margin: 0 auto;
+ }
+
+ .footer-brand {
+     font-weight: 600;
+     font-size: 1.15em;
+     margin-bottom: 0.4em;
+ }
+
+ .brand-name {
+     color: #fff;
+     font-weight: bold;
+ }
+
+ .brand-role {
+     color: #93c5fd;
+     margin-left: 0.5em;
+ }
+
+ .footer-links {
+     margin: 0.5em 0 1em 0;
+ }
+
+ .footer-links a {
+     color: #93c5fd;
+     margin: 0 0.6em;
+     text-decoration: none;
+     transition: color 0.2s;
+     font-size: 1em;
+ }
+
+ .footer-links a:hover {
+     color: #60a5fa;
+ }
+
+ .footer-links i {
+     margin-right: 0.3em;
+ }
+
+ .footer-desc {
+     font-size: 0.95em;
+     margin-bottom: 1em;
+     color: #cbd5e1;
+ }
+
+ .footer-copy {
+     font-size: 0.92em;
+     color: #64748b;
+ }
