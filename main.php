@@ -14,7 +14,7 @@ $ATTEST_DIV = "$RESSOURCES_DIV/attestations";
     <div class="boutons">
         <a href="https://www.linkedin.com/in/ronald-marthin-pina-guillen-69a0b7339?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY5GNg8YrR3yIhhZC4z8WsQ%3D%3D" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://github.com/RonaldPhub" target="_blank" rel="noopener noreferrer" class="github"><i class="fab fa-github"></i> GitHub</a>
-        <a href="<?= $DOCS_DIV ?>/cv" target="_blank" rel="noopener noreferrer" class="cv"><i class="fas fa-file-download"></i> Télécharger CV</a>
+        <a href="<?= $DOCS_DIV ?>/cv.pdf" target="_blank" rel="noopener noreferrer" class="cv"><i class="fas fa-file-download"></i> Télécharger CV</a>
     </div>
 </section>
 
