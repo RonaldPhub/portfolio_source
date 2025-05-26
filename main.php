@@ -107,7 +107,7 @@ $ATTEST_DIV = "$RESSOURCES_DIV/attestations";
             <div class="item"><img src="<?= $IMAGES_DIV ?>/linux.png" alt="Linux"><span>Linux</span></div>
         </div>
     </div>
-    <a href="<?= $DOCS_DIV ?>/tableau-synthese" target="_blank" rel="noopener noreferrer" class="competence-button"><i class="fas fa-table"></i> Tableau de compétences</a>
+    <a href="<?= $DOCS_DIV ?>/tableau-synthese.pdf" target="_blank" rel="noopener noreferrer" class="competence-button"><i class="fas fa-table"></i> Tableau de compétences</a>
 </section>
 
 <section id="formation">
